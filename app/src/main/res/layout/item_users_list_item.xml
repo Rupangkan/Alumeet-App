@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/_15sdp"
+    android:padding="@dimen/_10sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_user_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:innerRadius="0dp"
+        android:background="@drawable/bg_rounded_corners_no_padding_4_dp_grey_border_1_dp"
+        android:padding="@dimen/_20sdp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:elevation="12dp"
+                    android:innerRadius="0dp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:shape="ring"
+                    android:thicknessRatio="1.9"
+                    app:cardCornerRadius="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_user_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="Nav Header"
+                        android:padding="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:src="@drawable/doge"
+                        android:transitionName="picture" />
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_20sdp"
+                        android:text="Rupangkan Kalita"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtv_occupation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student, CSE" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:contentDescription="Nav Header"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:src="@drawable/ic_baseline_handshake_24"
+                    android:transitionName="picture" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

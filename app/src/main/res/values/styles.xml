@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NavDrawerTextStyle" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="IconColorSecondaryStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tint">@color/iconColorSecondary</item>
+    </style>
+</resources>
